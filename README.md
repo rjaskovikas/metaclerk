@@ -40,13 +40,13 @@ In order to build *metaclerk* program from source code you must follow these ste
 1. Install and setup Java 8 JDK.
 2. Install and setup Maven. I am using maven version 3.0.4 for this project. You can use different version if you wish.
 3. Clone *metaclerk* project to your computer from GitHub using URL: https://github.com/rjaskovikas/metaclerk.git. 
-Directory where you cloned *metaclerk* source I will call *<metaclerk-src-dir>* in following description. 
+Directory where you cloned *metaclerk* source I will call *&lt;metaclerk-src-dir&gt;* in following description. 
 4. Download Oracle JDBC driver version 11.2.0.4 ([link to: ojdbc6.jar](http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html)) 
-and copy downloaded ojdbc6.jar file to *<metaclerk-src-dir>/libs-to-install* directory. 
-5. Open terminal in linux or command prompt in windows and go to *<metaclerk-src-dir>/libs-to-install* directory. 
+and copy downloaded ojdbc6.jar file to *&lt;metaclerk-src-dir&gt;/libs-to-install* directory. 
+5. Open terminal in linux or command prompt in windows and go to *&lt;metaclerk-src-dir&gt;/libs-to-install* directory. 
 Execute *install* script. This should install Oracle JDBC driver in local maven repository.
-6. Using the same terminal go to *<metaclerk-src-dir>* and execute "*mvn package*" command.
-7. Go to *<metaclerk-src-dir>/executable* directory and execute *metaclerk* command. You should get output similar to this:
+6. Using the same terminal go to *&lt;metaclerk-src-dir&gt;* and execute "*mvn package*" command.
+7. Go to *&lt;metaclerk-src-dir&gt;/executable* directory and execute *metaclerk* command. You should get output similar to this:
 
 ```bash
 C:\metaclerk\executable>metaclerk  
@@ -58,7 +58,7 @@ Commands:
         check - checks database schema against database snapshot
 ```
 
-8. Copy content of *<metaclerk-src-dir>/executable* directory to your desired location and use it.
+8. Copy content of *&lt;metaclerk-src-dir&gt;/executable* directory to your desired location and use it.
 
 ##Program usage examples
 Best program documentation is a list of examples of program usage. Bellow I provided a list of main examples of 
@@ -131,7 +131,7 @@ with empty *root* user password.
 At the moment *metaclerk* supports only Oracle and MySql databases. Database support is not hardcoded into application, 
 but instead database support is provided using database plugins. *metaclerk* architecture allows you to write your own
 database plugin and you can use unlimited number of databases plugins.   
-For database plugin example, please see *<metaclerk-src-dir>/mysql-plugin* or *<metaclerk-src-dir>/oracle-plugin* 
+For database plugin example, please see *&lt;metaclerk-src-dir&gt;/mysql-plugin* or *&lt;metaclerk-src-dir&gt;/oracle-plugin* 
 modules implementation.  
 Small note on *metaclerk* plugin loading procedure: *metaclerk* tries to load plugin which name is provided with *'-d'*
  parameter. For example: *metaclerk* plugin loading class looks for 
@@ -144,7 +144,7 @@ Small note on *metaclerk* plugin loading procedure: *metaclerk* tries to load pl
 
 ##<a name="ignoreListFile"/>Ignore list file structure
 Ignore list file is a simple xml file. At the moment both tables and views that should be ignored 
-must be listed in *\<tables2ignore>* tag scope using *\<table>* tags as shown in example bellow.
+must be listed in *&lt;tables2ignore&gt;* tag scope using *&lt;table&gt;* tags as shown in example bellow.
 ```xml
 <?xml version="1.0"?>
 <tables2ignore>
