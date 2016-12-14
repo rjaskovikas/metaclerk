@@ -28,8 +28,8 @@ metadata objects.
   
 Program usage is very simple - *metaclerk* is a command line tool with two commands:
 
-1. Snapshot command is used to capture current database schema snapshot and output captured data in xml format.
-2. Check command is used to check captured snapshot metadata against current database metadata. 
+1. *Snapshot* command is used to capture current database schema snapshot and output captured data in xml format.
+2. *Check* command is used to check captured snapshot metadata against current database metadata. 
  
 Please read *'Program usage examples'* section for program usage documentation and examples. 
 
@@ -70,6 +70,10 @@ In case you need more information about commands parameter please execute '*meta
 * Make mysql database dev_db.lan snapshot and output it to console  
 ```bash
 > metaclerk snapshot -d mysql -c "jdbc:mysql://dev_db.lan?useSSL=false"  -u testUser -p testUserPassword -s testSchema
+```
+* Make postgresql server dev_db.lan database db_name snapshot and ouput it to file *db-snapshot-release-3.xml*
+```bash
+> metaclerk snapshot -d postgresql -c "jdbc:postgresql://dev_db.lan/db_name"  -u testUser -p testUserPassword -s testSchema
 ```
  
 * Make oracle database *dev_db.lan* snapshot and save it to file *db-snapshot-release-3.xml*
@@ -128,7 +132,7 @@ with empty *root* user password.
 ```
 
 ##Extending *metaclerk* to support other databases
-At the moment *metaclerk* supports only Oracle and MySql databases. Database support is not hardcoded into application, 
+*metaclerk* supports Oracle, PostgreSQL and MySql databases. Database support is not hardcoded into application, 
 but instead database support is provided using database plugins. *metaclerk* architecture allows you to write your own
 database plugin and you can use unlimited number of databases plugins.   
 For database plugin example, please see *&lt;metaclerk-src-dir&gt;/mysql-plugin* or *&lt;metaclerk-src-dir&gt;/oracle-plugin* 

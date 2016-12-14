@@ -41,16 +41,6 @@ public class PGSqlSchemaDAOImplTest {
 
     }
 
-//    @Test
-//    public void some() throws Exception {
-//        AllSchemaObjectsDAO dao = new DaoPluginFactory().createAllSchemaObjectsDAO();
-//        dao.initDAO("jdbc:postgresql://localhost/rola", "testas", "testas");
-//
-//        DbSchema schema = dao.getAllSchemaObjects("testas");
-//
-//        schema.getPrivileges().forEach(t->System.out.println(t.toString()));
-//    }
-
     @After
     public void tearDown() throws Exception {
         if (reinitDAOInTearDown)
