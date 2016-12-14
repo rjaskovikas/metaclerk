@@ -13,9 +13,11 @@
         <module>oracle-plugin</module>
         <module>mysql-plugin</module>
         <module>cli-program</module>
+        <module>postgresql-plugin</module>
     </modules>
 
     <properties>
+        <project.version>0.2-SNAPSHOT</project.version>
         <maven.resources.plugin.version>2.7</maven.resources.plugin.version>
         <maven.compiler.plugin.version>3.3</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>2.9</maven.surefire.plugin.version>
