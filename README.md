@@ -71,7 +71,7 @@ In case you need more information about commands parameter please execute '*meta
 ```bash
 > metaclerk snapshot -d mysql -c "jdbc:mysql://dev_db.lan?useSSL=false"  -u testUser -p testUserPassword -s testSchema
 ```
-* Make postgresql server dev_db.lan database db_name snapshot and ouput it to file *db-snapshot-release-3.xml*
+* Make postgresql server dev_db.lan database db_name snapshot and ouput it to console
 ```bash
 > metaclerk snapshot -d postgresql -c "jdbc:postgresql://dev_db.lan/db_name"  -u testUser -p testUserPassword -s testSchema
 ```
