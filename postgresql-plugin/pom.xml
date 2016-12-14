@@ -12,5 +12,37 @@
     <artifactId>postgresql-plugin</artifactId>
     <version>${project.version}</version>
 
+    <properties>
+        <postgresql.jdbc.driver.version>9.4.1212.jre7</postgresql.jdbc.driver.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.rola.metaclerk</groupId>
+            <artifactId>cli-program</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.jdbc.driver.version}</version>
+        </dependency>
+        <!-- test libraries -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
