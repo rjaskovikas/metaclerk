@@ -19,10 +19,10 @@ database schemas have small differences,
   in expected state before executing installation script. Also I recommend to use this tool after installation scripts 
   execution to 
   test that database has reached expected state. And of course *metaclerk* can be used to compare two database schemas 
-  manually to find exact differences. Also *metaclerk* code can be integrated into your application to check that database 
+  manually to find exact differences. *metaclerk* code can be integrated into your application to check that database 
   schema is in expected state on application startup.    
 
-At the moment *metaclerk* works with a small amount of database schema metadata. Only metadata of tables, views and 
+At the moment *metaclerk* works with a small amount of database schema metadata. Metadata of tables, views and 
 grants to other database schemas are used. Nevertheless the biggest amount of troubles rises from differences in these 
 metadata objects. 
   
@@ -31,7 +31,7 @@ Program usage is very simple - *metaclerk* is a command line tool with two comma
 1. *Snapshot* command is used to capture current database schema snapshot and output captured data in xml format.
 2. *Check* command is used to check captured snapshot metadata against current database metadata. 
  
-Please read *'Program usage examples'* section for program usage documentation and examples. 
+Please read [*'Program usage examples'*](#programExamples) section for program usage documentation and examples. 
 
 ##Build environment setup and program build
 
@@ -47,7 +47,6 @@ and copy downloaded ojdbc6.jar file to *&lt;metaclerk-src-dir&gt;/libs-to-instal
 Execute *install* script. This should install Oracle JDBC driver in local maven repository.
 6. Using the same terminal go to *&lt;metaclerk-src-dir&gt;* and execute "*mvn package*" command.
 7. Go to *&lt;metaclerk-src-dir&gt;/executable* directory and execute *metaclerk* command. You should get output similar to this:
-
 ```bash
 C:\metaclerk\executable>metaclerk  
 Program usage:  
@@ -57,10 +56,9 @@ Commands:
         snapshot - prints database schema snapshot  
         check - checks database schema against database snapshot
 ```
-
 8. Copy content of *&lt;metaclerk-src-dir&gt;/executable* directory to your desired location and use it.
 
-##Program usage examples
+##<a name="programExamples"/>Program usage examples
 Best program documentation is a list of examples of program usage. Bellow I provided a list of main examples of 
 program usage. 
 In case you need more information about commands parameter please execute '*metaclerk [command] help*'. 
