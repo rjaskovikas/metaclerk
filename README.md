@@ -102,8 +102,7 @@ information about differences including object and their attributes execute *che
 
 * Compare mysql database *test_db.lan* to snapshot file *db-snapshot-release-3.xml* using ignore list *ignore-list.xml* file. 
 ```bash
-> metaclerk.cmd check -d mysql -c "jdbc:mysql://dev_db.lan?useSSL=false" -u testUser -p testUserPassword 
--s testSchema -i db-snapshot-release-3.xml -il ignore-list.xml
+> metaclerk.cmd check -d mysql -c "jdbc:mysql://dev_db.lan?useSSL=false" -u testUser -p testUserPassword -s testSchema -i db-snapshot-release-3.xml -il ignore-list.xml
 ``` 
 
 __Note__: Use ignore list file in order to tell *metaclerk* to ignore some tables or views while comparing database
