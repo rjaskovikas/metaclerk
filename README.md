@@ -47,15 +47,15 @@ and copy downloaded ojdbc6.jar file to *&lt;metaclerk-src-dir&gt;/libs-to-instal
 Execute *install* script. This should install Oracle JDBC driver in local maven repository.
 6. Using the same terminal go to *&lt;metaclerk-src-dir&gt;* and execute "*mvn package*" command.
 7. Go to *&lt;metaclerk-src-dir&gt;/executable* directory and execute *metaclerk* command. You should get output similar to this:
-```bash
-C:\metaclerk\executable>metaclerk  
-Program usage:  
-metaclerk [command] {command parameters}  
- 
-Commands:  
-        snapshot - prints database schema snapshot  
-        check - checks database schema against database snapshot
-```
+ ```bash
+ C:\metaclerk\executable>metaclerk  
+ Program usage:  
+ metaclerk [command] {command parameters}  
+  
+ Commands:  
+         snapshot - prints database schema snapshot  
+         check - checks database schema against database snapshot
+ ```
 8. Copy content of *&lt;metaclerk-src-dir&gt;/executable* directory to your desired location and use it.
 
 ##<a name="programExamples"/>Program usage examples
